@@ -5,7 +5,7 @@
   },
   "apps": [
     {
-      "root": "src",
+      "root": "app",
       "outDir": "dist",
       "assets": [
         "assets",
@@ -22,10 +22,10 @@
         "styles.css"
       ],
       "scripts": [],
-      "environmentSource": "environments/environment.ts",
+      "environmentSource": "shared/config/environments/environment.ts",
       "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "dev": "shared/config/environments/environment.ts",
+        "prod": "shared/config/environments/environment.prod.ts"
       }
     }
   ],
@@ -36,10 +36,10 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "app/tsconfig.app.json"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "app/tsconfig.spec.json"
     },
     {
       "project": "e2e/tsconfig.e2e.json"

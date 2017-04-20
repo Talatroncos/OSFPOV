@@ -26,3 +26,40 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Estructura del proyecto
+
+.
++-- OSFPOV						# Raiz del proyecto
+    +-- app
+    |   +-- App_Resources		# Recursos específicos para cada plataforma
+	|	|   +-- Android
+	|	|   +-- iOS
+	|	+-- assets				# Recursos genéricos
+	|	|   +-- ...
+	|	+-- pages				# Cada página de la aplicación
+	|	|	+-- web				# 	Páginas específicas para la aplicación web
+	|	|	+-- mobile			# 	Páginas específicas para la aplicación móvil nativa
+	|	+-- shared				# Clases y ficheros compartidos
+	|	|	+-- models			#	Modelo
+	|	|	+-- services		#	Servicios de acceso a bases de datos, APIs,...
+	|	|   +-- ...
+    +-- hooks					# Ficheros de NativeScript para preprocesadores
+    |   +-- ...
+	+-- e2e						# Tests end-to-end
+	|	+-- ...
+    +-- node_modules			# Librerias y dependencias
+    |   +-- ...
+    +-- platforms				# Código específico para construir cada plataforma
+    |   +-- android
+    |   +-- ios
+	+-- .angular-cli.json		# Configuración de Angular-Cli
+	+-- .editorconfig			# Configuración para los IDEs
+	+-- .gitignore				# Lista de inclusión para Git
+	+-- karma.conf.js			# Configuración de los tests de componentes
+    +-- package.json			# Configuración del proyecto
+	+-- protractor.conf.js		# Configuración de los tests e2e
+    +-- references.d.ts			# Listado de cada fichero de declaración de TypeScript
+    +-- tsconfig.json			# Configuración de TypeScript
+	+-- tslint.json				# Configuración de Lint
