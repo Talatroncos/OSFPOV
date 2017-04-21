@@ -1,14 +1,14 @@
 import { OsfpovPage } from './app.po';
 
 describe('osfpov App', () => {
-  let page: OsfpovPage;
+    let page: OsfpovPage;
 
-  beforeEach(() => {
-    page = new OsfpovPage();
-  });
+    beforeEach(() => {
+        page = new OsfpovPage();
+    });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
+    it('should display message saying app works', () => {
+        page.navigateTo();
+        expect(page.getParagraphText()).toEqual('app works!');
+    });
 });
