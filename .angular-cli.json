@@ -6,13 +6,12 @@
   "apps": [
     {
       "root": "app",
-      "outDir": "dist",
       "assets": [
         "assets",
         "favicon.ico"
       ],
       "index": "index.html",
-      "main": "main.ts",
+      "main": "main_web.ts",
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",

@@ -30,17 +30,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Estructura del proyecto
 
-.
+```
 +-- OSFPOV						# Raiz del proyecto
     +-- app
-    |   +-- App_Resources		# Recursos espec韋icos para cada plataforma
+    |   +-- App_Resources		# Recursos espec铆ficos para cada plataforma
 	|	|   +-- Android
 	|	|   +-- iOS
-	|	+-- assets				# Recursos gen閞icos
+	|	+-- assets				# Recursos gen茅ricos
 	|	|   +-- ...
-	|	+-- pages				# Cada p醙ina de la aplicaci髇
-	|	|	+-- web				# 	P醙inas espec韋icas para la aplicaci髇 web
-	|	|	+-- mobile			# 	P醙inas espec韋icas para la aplicaci髇 m髒il nativa
+	|	+-- pages				# Cada p谩gina de la aplicaci贸n
+	|	|	+-- web				# 	P谩ginas espec铆ficas para la aplicaci贸n web
+	|	|	+-- mobile			# 	P谩ginas espec铆ficas para la aplicaci贸n m贸vil nativa
 	|	+-- shared				# Clases y ficheros compartidos
 	|	|	+-- models			#	Modelo
 	|	|	+-- services		#	Servicios de acceso a bases de datos, APIs,...
@@ -51,15 +51,43 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 	|	+-- ...
     +-- node_modules			# Librerias y dependencias
     |   +-- ...
-    +-- platforms				# C骴igo espec韋ico para construir cada plataforma
+    +-- platforms				# C贸digo espec铆fico para construir cada plataforma
     |   +-- android
     |   +-- ios
-	+-- .angular-cli.json		# Configuraci髇 de Angular-Cli
-	+-- .editorconfig			# Configuraci髇 para los IDEs
-	+-- .gitignore				# Lista de inclusi髇 para Git
-	+-- karma.conf.js			# Configuraci髇 de los tests de componentes
-    +-- package.json			# Configuraci髇 del proyecto
-	+-- protractor.conf.js		# Configuraci髇 de los tests e2e
-    +-- references.d.ts			# Listado de cada fichero de declaraci髇 de TypeScript
-    +-- tsconfig.json			# Configuraci髇 de TypeScript
-	+-- tslint.json				# Configuraci髇 de Lint
+	+-- .angular-cli.json		# Configuraci贸n de Angular-Cli
+	+-- .editorconfig			# Configuraci贸n para los IDEs
+	+-- .gitignore				# Lista de inclusi贸n para Git
+	+-- karma.conf.js			# Configuraci贸n de los tests de componentes
+    +-- package.json			# Configuraci贸n del proyecto
+	+-- protractor.conf.js		# Configuraci贸n de los tests e2e
+    +-- references.d.ts			# Listado de cada fichero de declaraci贸n de TypeScript
+    +-- tsconfig.json			# Configuraci贸n de TypeScript
+	+-- tslint.json				# Configuraci贸n de Lint
+```
+
+## Formato de los Commits
+
+**tipo**(*m贸dulo*): Mensaje
+Ejemplos:
+```
+fix(selector): Correcte Selector operators
+chore(release): Release patch version (v1.1.5)
+refactor: Move JSW-Logger module outside the project
+chore(publishing): Publish API doc and NPM when version changes
+chore(release): Release patch version (v1.1.4)
+feat(collection): Add "destroy" and "delete" aliases for Collection#remove
+```
+Aqu铆 hay un ejemplo de c贸mo se genera: [Changelog](https://github.com/EastolfiWebDev/MongoPortable/blob/master/CHANGELOG.md)
+
+| Tipo     | Entrada                  | Descripci贸n                       |
+| :------- | :----------------------- | :-------------------------------- |
+| feat     | Features                 | Nuevas funcionalidades            |
+| fix      | Bug Fixes                | Correcci贸n de errores             |
+| perf     | Performance Improvements | Mejoras de rendimiento            |
+| revert   | Reverts                  | Anulaci贸n de una parte del c贸digo |
+| docs     | Documentation            | Documentaci贸n                     |
+| style    | Styles                   | Cambios de estilos                |
+| refactor | Code Refactoring         | Reestructuraci贸n de c贸digo        |
+| test     | Tests                    | Tests                             |
+| chore    | Chores                   | Cambios varios                    |
+| discard  | ------------------------ | Ignora este commit                |
