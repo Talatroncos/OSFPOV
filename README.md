@@ -1,6 +1,6 @@
 # Osfpov
 
-open source free public ostias en vinagre
+Open Source Free Public Ostias en Vinagre
 
 ## Development server
 
@@ -28,6 +28,9 @@ Before running the tests make sure you are serving the app via `npm start`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 # NativeScript
+
+## First time Android
+Run `npm run setup:android` to generate all the required files needed to build the application
 
 ## Build for Android
 Run `npm run build:android` to compile and generate the application for Android
