@@ -7,8 +7,8 @@ describe('osfpov App', () => {
         page = new OsfpovPage();
     });
 
-    it('should display message saying app works', () => {
+    it('should display message saying App Web!', () => {
         page.navigateTo();
-        expect(page.getParagraphText()).toEqual('app works!');
+        expect(page.getParagraphText()).toEqual('App Web!');
     });
 });
