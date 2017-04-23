@@ -41,45 +41,46 @@ Run `npm run android` to generate and launch the application in Android
 ## Estructura del proyecto
 
 ```
-+-- OSFPOV						# Raiz del proyecto
++-- OSFPOV					# Raiz del proyecto
     +-- app
-    |   +-- App_Resources		# Recursos específicos para cada plataforma
+    |   +-- App_Resources		        # Recursos específicos para cada plataforma
 	|	|   +-- Android
 	|	|   +-- iOS
-	|	+-- assets				# Recursos genéricos
+	|	+-- assets			# Recursos genéricos
 	|	|   +-- ...
-	|	+-- pages				# Cada página de la aplicación
-	|	|	+-- web				# 	Páginas específicas para la aplicación web
-	|	|	+-- mobile			# 	Páginas específicas para la aplicación móvil nativa
-	|	+-- shared				# Clases y ficheros compartidos
-	|	|	+-- models			#	Modelo
-	|	|	+-- services		#	Servicios de acceso a bases de datos, APIs,...
+	|	+-- pages			# Cada página de la aplicación
+	|	|	+-- web			#   Páginas específicas para la aplicación web
+	|	|	+-- mobile		#   Páginas específicas para la aplicación móvil nativa
+	|	+-- shared			# Clases y ficheros compartidos
+	|	|	+-- models		#   Modelo
+	|	|	+-- services	        #   Servicios de acceso a bases de datos, APIs,...
 	|	|   +-- ...
     +-- hooks					# Ficheros de NativeScript para preprocesadores
     |   +-- ...
-	+-- e2e						# Tests completos de la aplicación
-	|	- app.e2e-spec.ts       #   Especificación del test
-	|	- app.po.ts             #   Clase de ayuda para ejecutar el test
-	|	- tsconfig.e2e.json     #   Configuración de TypeScript para los tests
-    +-- node_modules			# Librerias y dependencias
+	+-- e2e					# Tests completos de la aplicación
+	|	- app.e2e-spec.ts               #   Especificación del test
+	|	- app.po.ts                     #   Clase de ayuda para ejecutar el test
+	|	- tsconfig.e2e.json             #   Configuración de TypeScript para los tests
+    +-- node_modules			        # Librerias y dependencias
     |   +-- ...
     +-- platforms				# Código específico para construir cada plataforma
     |   +-- android
     |   +-- ios
-	- .angular-cli.json		    # Configuración de Angular-Cli
-	- .editorconfig			    # Configuración para los IDEs
+	- .angular-cli.json		        # Configuración de Angular-Cli
+	- .editorconfig			        # Configuración para los IDEs
 	- .gitignore				# Lista de inclusión para Git
-	- karma.conf.js			    # Configuración de los tests de componentes
-    - package.json			    # Configuración del proyecto
-	- protractor.conf.js		# Configuración de los tests e2e
-    - references.d.ts			# Listado de cada fichero de declaración de TypeScript
-    - tsconfig.json			    # Configuración de TypeScript
+	- karma.conf.js			        # Configuración de los tests de componentes
+    - package.json			        # Configuración del proyecto
+	- protractor.conf.js		        # Configuración de los tests e2e
+    - references.d.ts			        # Listado de cada fichero de declaración de TypeScript
+    - tsconfig.json			        # Configuración de TypeScript
 	- tslint.json				# Configuración de Lint
 ```
 
 ## Formato de los Commits
 
 **tipo**(*módulo*): Mensaje
+
 Ejemplos:
 ```
 fix(selector): Correcte Selector operators
