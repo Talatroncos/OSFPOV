@@ -44,17 +44,17 @@ Run `npm run android` to generate and launch the application in Android
 +-- OSFPOV					# Raiz del proyecto
 	+-- app
 	|	+-- App_Resources		# Recursos específicos para cada plataforma
-	|	|   +-- Android
-	|	|   +-- iOS
+	|	|	+-- Android
+	|	|	+-- iOS
 	|	+-- assets			# Recursos genéricos
-	|	|   +-- ...
+	|	|	+-- ...
 	|	+-- pages			# Cada página de la aplicación
 	|	|	+-- web			#   Páginas específicas para la aplicación web
 	|	|	+-- mobile		#   Páginas específicas para la aplicación móvil nativa
 	|	+-- shared			# Clases y ficheros compartidos
 	|	|	+-- models		#   Modelo
 	|	|	+-- services	        #   Servicios de acceso a bases de datos, APIs,...
-	|	|   +-- ...
+	|	|	+-- ...
 	+-- hooks				# Ficheros de NativeScript para preprocesadores
 	|	+-- ...
 	+-- e2e					# Tests completos de la aplicación
