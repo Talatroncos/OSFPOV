@@ -43,7 +43,7 @@ Run `npm run android` to generate and launch the application in Android
 ```
 +-- OSFPOV					# Raiz del proyecto
 	+-- app
-	|   +-- App_Resources		        # Recursos específicos para cada plataforma
+	|	+-- App_Resources		# Recursos específicos para cada plataforma
 	|	|   +-- Android
 	|	|   +-- iOS
 	|	+-- assets			# Recursos genéricos
@@ -56,16 +56,16 @@ Run `npm run android` to generate and launch the application in Android
 	|	|	+-- services	        #   Servicios de acceso a bases de datos, APIs,...
 	|	|   +-- ...
 	+-- hooks				# Ficheros de NativeScript para preprocesadores
-	|   +-- ...
+	|	+-- ...
 	+-- e2e					# Tests completos de la aplicación
 	|	- app.e2e-spec.ts               #   Especificación del test
 	|	- app.po.ts                     #   Clase de ayuda para ejecutar el test
 	|	- tsconfig.e2e.json             #   Configuración de TypeScript para los tests
 	+-- node_modules			# Librerias y dependencias
-	|   +-- ...
+	|	+-- ...
 	+-- platforms				# Código específico para construir cada plataforma
-	|   +-- android
-	|   +-- ios
+	|	+-- android
+	|	+-- ios
 	- .angular-cli.json		        # Configuración de Angular-Cli
 	- .editorconfig			        # Configuración para los IDEs
 	- .gitignore				# Lista de inclusión para Git
