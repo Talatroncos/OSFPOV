@@ -2,6 +2,7 @@
 import { platformNativeScriptDynamic } from "nativescript-angular/platform";
 import { registerElement } from "nativescript-angular/element-registry";
 
+// Importamos el modulo principal
 import { AppModule } from "./pages/mobile/app.module";
 
 //registerElement("DropDown", () => require("nativescript-drop-down/drop-down").DropDown);
