@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FirebaseApp } from "angularfire2";
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
-import * as SHA256 from "crypto-js/sha256";
 
 @Component({
     selector: 'app-root',
@@ -23,7 +22,6 @@ export class AppComponent implements OnInit {
     constructor(private db: AngularFireDatabase, private auth: AngularFireAuth) {
         // Logeamos anonimamente
         this.auth.auth.signInAnonymously();
-        console.log(SHA256("Message"));
     }
 
     /**

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as SHA256 from "crypto-js/sha256";
 
 @Component({
     selector: 'osfpov-pruebas',
@@ -6,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./pruebas.component.css']
 })
 export class PruebasComponent implements OnInit {
+    texto: string;
+    textoSHA: string;
 
-    constructor() { }
+    constructor() {
+        this.texto = "";
+    }
     
     ngOnInit() {
       
+    }
+    
+    code() {
+        this.textoSHA = SHA256(this.texto);
     }
 
 }
