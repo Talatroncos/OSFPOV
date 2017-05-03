@@ -14,7 +14,9 @@
         ],
         "baseUrl": ".",
         "paths": {
-            "shared": ["app/shared/*"]
+            "shared": [
+                "app/shared/*"
+            ]
         },
         "lib": [
             "es2016",
